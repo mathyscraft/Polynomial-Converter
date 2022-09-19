@@ -59,21 +59,18 @@ button:hover {
     box-shadow: 5px 3px 12px 5px rgba(0, 0, 0, 0.3);
 }
 
-.center {
-    width: 100%;
+#form {
     display: flex;
     justify-content: center;
 }
 
-#form {
+.request {
     text-align: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.values {
-    display: flex;
-}
-
-.values > div {
+#form > div {
     padding: 5px 10px;
 }
 
