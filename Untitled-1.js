@@ -112,5 +112,7 @@ function clic(){
     "Racine n°1 : <span class='result'>"+racineA+"</span><br>"+
     "Racine n°2 : <span class='result'>"+racineB+"</span><br>"+
     "<span class='result'>"+signeContraire+"</span><br>"
+    document.getElementById("opened-bloc").innerHTML +=
+    "<img src='courbe.png'>";
 
 } 

@@ -4,14 +4,19 @@ html, body {
     font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
 }
 
+p {
+    text-align: left;
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
 }
 
-a {
+footer, a {
     color: #3b3b3b;
 }
+
 input {
     padding: 3px;
     color: #283618;
@@ -64,12 +69,15 @@ button:hover {
     justify-content: center;
 }
 
-.request {
+.fixed-bloc {
     text-align: center;
     justify-content: center;
     width: 100%;
 }
 
+.fixed-bloc > h2 {
+    font-size: 25px;
+}
 #form > div {
     padding: 5px 10px;
 }
@@ -81,6 +89,28 @@ button:hover {
     padding: 2px 4px;
     margin: 1px;
     border-radius: 4px;
+}
+
+#opened-bloc {
+    display: flex;
+    text-align: center;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+#opened-bloc > img {
+    width: 30%;
+    height: 100%;
+    margin-right: 10%;
+}
+@media screen and (max-width: 850px) {
+    #opened-bloc {
+        display: block;
+    }
+    #opened-bloc > img {
+        margin-right: 0px;
+        width: 60%;
+    }
 }
 
 .copyright {
