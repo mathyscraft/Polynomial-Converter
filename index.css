@@ -1,0 +1,92 @@
+html, body {
+    background-color: #606c38;
+    color: #fefae0;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #3b3b3b;
+}
+input {
+    padding: 3px;
+    color: #283618;
+    font-weight: bold;
+    background-color: #fefae0;
+    border-radius: 4px;
+    border-width: 0px;
+}
+
+button {
+    padding: 10px;
+    color: #fefae0;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: #bc6c25;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.4);
+
+}
+
+button:hover {
+    padding: 10px;
+    color: #fefae0;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    background-color: #bd7332;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
+
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
+.bloc {
+    background-color: #283618;
+    line-height: 200%;
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 12px 5px rgba(0, 0, 0, 0.3);
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    text-align: center;
+}
+
+.values {
+    display: flex;
+}
+
+.values > div {
+    padding: 5px 10px;
+}
+
+.result {
+    background-color: #fefae0;
+    font-weight: bold;
+    color: #bc6c25;
+    padding: 2px 4px;
+    margin: 1px;
+    border-radius: 4px;
+}
+
+.copyright {
+    text-align: right;
+    margin-bottom: -10px;
+}
