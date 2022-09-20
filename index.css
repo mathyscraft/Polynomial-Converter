@@ -103,6 +103,10 @@ button:hover {
     height: 100%;
     margin-right: 10%;
 }
+
+#opened-bloc > p {
+    width: 60%;
+}
 @media screen and (max-width: 850px) {
     #opened-bloc {
         display: block;
