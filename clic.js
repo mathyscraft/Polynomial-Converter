@@ -2,7 +2,15 @@ var a;
 var b;
 var c;
 
+var i = 0;
+
 function clic(){
+
+
+    for (i = i; i < 1; i++) {
+        document.getElementById("opened-bloc").innerHTML +=
+        "<img src='courbe.png'>";
+    }
 
     var form = document.getElementById("form");
     a = form.elements[0].value ;
@@ -10,6 +18,10 @@ function clic(){
     c = form.elements[2].value ;
     console.log(a+" ; "+b+" ; "+c);
 
+    localStorage.setItem("a", a)
+    localStorage.setItem("b", b)
+    localStorage.setItem("c", c)
+    courbe()
 
     var delta = b**2-4*a*c ;
     var alpha = (-b)/(2*a) ;
@@ -92,7 +104,7 @@ function clic(){
     console.log("Forme canonique: "+a+"(x"+signeAlpha+alpha+")"+signeBeta+beta);
 
     if (delta >= 0) {
-        formeFactorisee = "Forme factorisée: <span class='result'>"+a+"(x"+signeXa+xa+")(x"+signeXb+xb+")</span>";
+        formeFactorisee = "Forme factorisée: <span class='result'>"+a+"(x"+signeXa+xa+") (x"+signeXb+xb+")</span>";
         console.log("Forme factorisée: "+a+"(x"+signeXa+xa+")(x"+signeXb+xb+")");
     } else {
         formeFactorisee = "Pas de forme factorisée";
@@ -103,16 +115,14 @@ function clic(){
 
     console.log(signeContraire)
 
-
     document.getElementById("reponse").innerHTML = 
     "Forme polynomiale: <span class='result'>"+a+"x²"+signeB+b+"x"+signeC+c +"</span><br>"+
-    "Forme canonique: <span class='result'>"+a+"(x"+signeAlpha+alpha+")"+signeBeta+beta +"</span><br>"+
+    "Forme canonique: <span class='result'>"+a+"(x"+signeAlpha+alpha+")² "+signeBeta+beta +"</span><br>"+
     formeFactorisee +"<br>"+
     "Delta: <span class='result'>"+delta +"</span><br>"+
     "Racine n°1 : <span class='result'>"+racineA+"</span><br>"+
     "Racine n°2 : <span class='result'>"+racineB+"</span><br>"+
     "<span class='result'>"+signeContraire+"</span><br>"
-    document.getElementById("opened-bloc").innerHTML +=
-    "<img src='courbe.png'>";
+    
 
 } 
