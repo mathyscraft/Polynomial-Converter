@@ -18,12 +18,18 @@ function clic(){
     c = form.elements[2].value ;
     console.log(a+" ; "+b+" ; "+c);
 
-
     var delta = b**2-4*a*c ;
     var alpha = (-b)/(2*a) ;
     var beta = -delta/(4*a) ;
     var xa = (-b-Math.sqrt(delta))/(2*a);
     var xb = (-b+Math.sqrt(delta))/(2*a);
+
+    localStorage.setItem("a", a);
+    localStorage.setItem("b", b);
+    localStorage.setItem("c", c);   
+    localStorage.setItem("alpha", alpha);
+    localStorage.setItem("beta", beta);
+    courbe()    
 
     var signeB;
     var signeC;
@@ -58,17 +64,17 @@ function clic(){
     if (xa < xb) {
 
         if (a < 0) {
-            signeContraire = "]"+xa+";"+xb+"[ > 0";
+            signeContraire = "]"+xa+" ; "+xb+"[ > 0";
         } else {
-            signeContraire = "]"+xa+";"+xb+"[ < 0";
+            signeContraire = "]"+xa+" ; "+xb+"[ < 0";
         }
 
     } else {
 
         if (a < 0) {
-            signeContraire = "]"+xb+";"+xa+"[ > 0";
+            signeContraire = "]"+xb+" ; "+xa+"[ > 0";
         } else {
-            signeContraire = "]"+xb+";"+xa+"[ < 0";
+            signeContraire = "]"+xb+" ; "+xa+"[ < 0";
         }
 
     }
@@ -113,7 +119,7 @@ function clic(){
 
     document.getElementById("reponse").innerHTML = 
     "Forme polynomiale: <span class='result'>"+a+"x²"+signeB+b+"x"+signeC+c +"</span><br>"+
-    "Forme canonique: <span class='result'>"+a+"(x"+signeAlpha+alpha+") "+signeBeta+beta +"</span><br>"+
+    "Forme canonique: <span class='result'>"+a+"(x"+signeAlpha+alpha+")² "+signeBeta+beta +"</span><br>"+
     formeFactorisee +"<br>"+
     "Delta: <span class='result'>"+delta +"</span><br>"+
     "Racine n°1 : <span class='result'>"+racineA+"</span><br>"+

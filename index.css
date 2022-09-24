@@ -55,6 +55,7 @@ button:hover {
     justify-content: center;
 }
 .bloc {
+    text-align: center;
     background-color: #283618;
     line-height: 200%;
     width: 50%;
@@ -115,6 +116,28 @@ button:hover {
         margin-right: 0px;
         width: 60%;
     }
+}
+
+#graph {
+    display: block;
+}
+
+#graph > a > canvas {
+    width: 85%;
+    height: 85%;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 10px solid #965823;
+    box-shadow: 5px 3px 12px 5px rgba(0, 0, 0, 0.3);
+}
+
+#graph > button {
+    margin: 0 10px;
+    width: 40px;
+}
+
+#graph > #zoomValue {
+    font-size: 22px;
 }
 
 .copyright {
