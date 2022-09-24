@@ -17,8 +17,11 @@ function courbe() {
 
     let parentDiv = document.getElementById("graph");
 
+    let url = document.createElement('a');
+    parentDiv.appendChild(url)
+
     let canvas =  document.createElement('canvas');
-    parentDiv.appendChild(canvas);
+    url.appendChild(canvas);
         
     parentDiv.appendChild(document.createElement("br"));
 
@@ -110,4 +113,6 @@ function courbe() {
     ctx.stroke();
     ctx.fillText("\u03b2", zoom*alpha+10, -zoom*beta-5);
 
+    url.setAttribute("href", canvas.toDataURL('image/png'));
+    url.setAttribute("target", "_blank");
 }

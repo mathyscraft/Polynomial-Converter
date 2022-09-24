@@ -118,9 +118,9 @@ button:hover {
     display: block;
 }
 
-#graph > canvas {
-    width: 500px;
-    height: 500px;
+#graph > a > canvas {
+    width: 85%;
+    height: 85%;
     margin-top: 20px;
     border-radius: 20px;
     border: 10px solid #965823;

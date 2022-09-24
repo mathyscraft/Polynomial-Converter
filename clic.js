@@ -64,17 +64,17 @@ function clic(){
     if (xa < xb) {
 
         if (a < 0) {
-            signeContraire = "]"+xa+";"+xb+"[ > 0";
+            signeContraire = "]"+xa+" ; "+xb+"[ > 0";
         } else {
-            signeContraire = "]"+xa+";"+xb+"[ < 0";
+            signeContraire = "]"+xa+" ; "+xb+"[ < 0";
         }
 
     } else {
 
         if (a < 0) {
-            signeContraire = "]"+xb+";"+xa+"[ > 0";
+            signeContraire = "]"+xb+" ; "+xa+"[ > 0";
         } else {
-            signeContraire = "]"+xb+";"+xa+"[ < 0";
+            signeContraire = "]"+xb+" ; "+xa+"[ < 0";
         }
 
     }
