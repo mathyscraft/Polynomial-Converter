@@ -114,13 +114,26 @@ button:hover {
     }
 }
 
-.bloc > canvas {
+#graph {
+    display: block;
+}
+
+#graph > canvas {
     width: 500px;
     height: 500px;
     margin-top: 20px;
     border-radius: 20px;
     border: 10px solid #965823;
     box-shadow: 5px 3px 12px 5px rgba(0, 0, 0, 0.3);
+}
+
+#graph > button {
+    margin: 0 10px;
+    width: 40px;
+}
+
+#graph > #zoomValue {
+    font-size: 22px;
 }
 
 .copyright {

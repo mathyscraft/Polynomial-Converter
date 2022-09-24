@@ -18,16 +18,18 @@ function clic(){
     c = form.elements[2].value ;
     console.log(a+" ; "+b+" ; "+c);
 
-    localStorage.setItem("a", a)
-    localStorage.setItem("b", b)
-    localStorage.setItem("c", c)
-    courbe()
-
     var delta = b**2-4*a*c ;
     var alpha = (-b)/(2*a) ;
     var beta = -delta/(4*a) ;
     var xa = (-b-Math.sqrt(delta))/(2*a);
     var xb = (-b+Math.sqrt(delta))/(2*a);
+
+    localStorage.setItem("a", a);
+    localStorage.setItem("b", b);
+    localStorage.setItem("c", c);   
+    localStorage.setItem("alpha", alpha);
+    localStorage.setItem("beta", beta);
+    courbe()    
 
     var signeB;
     var signeC;
