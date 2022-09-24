@@ -63,19 +63,27 @@ function courbe() {
     ctx.beginPath();
         ctx.strokeStyle = "#3f3f3f";
         ctx.lineWidth = 1;
+        ctx.font = "20px serif";
+        ctx.fillStyle = "black";
+        
         var line = 0;
         for (var i = 0; i < 9; i++) {
             line = line + 50
             ctx.moveTo(line, 0);
             ctx.lineTo(line, 500);
+            if (line-250 != 0) {
+                ctx.fillText(Math.round(((line-250)/-zoom)*10)/10, 255, line-2);
+            }
         }
         line = 0;
         for (var i = 0; i < 9; i++) {
+            
             line = line + 50
             ctx.moveTo(0, line);
             ctx.lineTo(500, line);
+            ctx.fillText(Math.round(((line-250)/zoom)*10)/10, line+2, 245);
         }
-    ctx.stroke();
+        ctx.stroke();
 
 
     // Génère la courbe
