@@ -17,7 +17,7 @@ function darkmode() {
     css.setProperty('--couleur3', '#f1f1f1');
     css.setProperty('--couleur4-1', '#7209b7');
     css.setProperty('--couleur4-2', '#8f3dc5');
-    document.getElementById("image").setAttribute("src", "img/courbe_1.png") 
+    document.getElementById("image").setAttribute("src", "courbe_1.png") 
 }
 
 function originalmode () {
@@ -29,7 +29,7 @@ function originalmode () {
     css.setProperty('--couleur3', '#fefae0');
     css.setProperty('--couleur4-1', '#bc6c25');
     css.setProperty('--couleur4-2', '#d68844');
-    document.getElementById("image").setAttribute("src", "img/courbe_0.png") 
+    document.getElementById("image").setAttribute("src", "courbe_0.png") 
 }
 
 function businessmode () {
@@ -41,5 +41,5 @@ function businessmode () {
     css.setProperty('--couleur3', '#2b2b2b');
     css.setProperty('--couleur4-1', '#5f77ff');
     css.setProperty('--couleur4-2', '#8193f7');
-    document.getElementById("image").setAttribute("src", "img/courbe_2.png") 
+    document.getElementById("image").setAttribute("src", "courbe_2.png") 
 }
