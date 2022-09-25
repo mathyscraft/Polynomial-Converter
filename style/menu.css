@@ -1,0 +1,76 @@
+.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    margin: 10px;
+    padding: 10px;
+
+    color: white;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background-color: var(--couleur4-1);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.4);
+}
+
+.menu > button {
+    padding-bottom: 5px;
+    background-color: transparent ;
+    box-shadow: none;
+    font-size: medium;
+}
+
+.menu > button:hover {
+    background-color: rgba(255, 255, 255, 0.155) ;
+}
+
+.menu > button > img {
+    width: 48px;
+    height: 48px;
+}
+
+@media screen and (max-width: 850px) {
+    .menu {
+        padding: 5px;
+        margin: 5px;
+    }
+    .menu > button > img {
+        width: 32px;
+        height: 32px;
+    } 
+}
+
+#nav {
+    color: #f1f1f1;
+    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
+
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+
+    margin: 5px;
+    text-align: left;
+    background-color: black;
+    color: white;
+    box-shadow: none;
+    font-size: medium;
+}
+
+.nav-button:hover {
+    margin: 5px;
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    font-size: medium;
+}
+
+.nav-button > img {
+    margin-right: 5px;
+    content: url(/img/darkmode_white.svg);
+}
+.nav-button:hover > img {
+    content: url(/img/darkmode_black.svg);
+}

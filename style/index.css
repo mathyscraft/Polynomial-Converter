@@ -1,6 +1,14 @@
+:root {
+    --couleur1: #283618 ;
+    --couleur2: #606c38 ;
+    --couleur3: #fefae0 ;
+    --couleur4-1: #bc6c25 ;
+    --couleur4-2: #d68844 ;
+}
+
 html, body {
-    background-color: #606c38;
-    color: #fefae0;
+    background-color: var(--couleur2);
+    color: var(--couleur3);
     font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
 }
 
@@ -14,24 +22,24 @@ footer {
 }
 
 footer, a {
-    color: #3b3b3b;
+    color: var(--couleur3);
 }
 
 input {
     padding: 3px;
     color: #283618;
     font-weight: bold;
-    background-color: #fefae0;
+    background-color: white;
     border-radius: 4px;
     border-width: 0px;
 }
 
 button {
     padding: 10px;
-    color: #fefae0;
+    color: #f1f1f1;
     font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    background-color: #bc6c25;
+    background-color: var(--couleur4-1);
     border: none;
     border-radius: 15px;
     box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.4);
@@ -40,10 +48,10 @@ button {
 
 button:hover {
     padding: 10px;
-    color: #fefae0;
+    color: #f1f1f1;
     font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
     font-size: 22px;
-    background-color: #bd7332;
+    background-color: var(--couleur4-2);
     border: none;
     border-radius: 15px;
     box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
@@ -56,7 +64,7 @@ button:hover {
 }
 .bloc {
     text-align: center;
-    background-color: #283618;
+    background-color: var(--couleur1);
     line-height: 200%;
     width: 50%;
     padding: 20px;
@@ -84,9 +92,9 @@ button:hover {
 }
 
 .result {
-    background-color: #fefae0;
+    background-color: white;
     font-weight: bold;
-    color: #bc6c25;
+    color: var(--couleur4-1);
     padding: 2px 4px;
     margin: 1px;
     border-radius: 4px;
@@ -127,7 +135,7 @@ button:hover {
     height: 85%;
     margin-top: 20px;
     border-radius: 20px;
-    border: 10px solid #965823;
+    border: 10px solid var(--couleur4-1);
     box-shadow: 5px 3px 12px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -143,4 +151,14 @@ button:hover {
 .copyright {
     text-align: right;
     margin-bottom: -10px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.479);
 }
