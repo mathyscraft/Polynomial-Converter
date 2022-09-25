@@ -10,7 +10,7 @@ function clic(){
     for (i = i; i < 1; i++) {
 
             document.getElementById("opened-bloc").innerHTML +=
-            "<img src='img/courbe_"+style+".png'id=image>";
+            "<img src='courbe_"+style+".png'id=image>";
         
     }
 

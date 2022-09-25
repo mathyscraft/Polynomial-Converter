@@ -69,8 +69,8 @@
 
 .nav-button > img {
     margin-right: 5px;
-    content: url(/img/darkmode_white.svg);
+    content: url(darkmode_white.svg);
 }
 .nav-button:hover > img {
-    content: url(/img/darkmode_black.svg);
+    content: url(darkmode_black.svg);
 }
