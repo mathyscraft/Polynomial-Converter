@@ -6,9 +6,9 @@ var i = 0;
 
 function clic(){
 
-    let style = localStorage.getItem("style");
+    let style = sessionStorage.getItem("style");
     for (i = i; i < 1; i++) {
-
+        
             document.getElementById("opened-bloc").innerHTML +=
             "<img src='courbe_"+style+".png'id=image>";
         
