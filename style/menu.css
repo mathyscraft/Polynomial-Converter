@@ -1,5 +1,5 @@
 .root {
-    --darkmode-icon: url(darkmode_white.svg);
+    --darkmode-icon: url(../img/darkmode_white.svg);
 }
 .menu {
     position: absolute;
@@ -75,5 +75,5 @@
     content: var(--darkmode-icon);
 }
 .nav-button:hover > img {
-    content: url(darkmode_black.svg);
+    content: url(../img/darkmode_black.svg);
 }

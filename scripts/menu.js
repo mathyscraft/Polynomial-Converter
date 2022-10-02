@@ -4,7 +4,7 @@ sessionStorage.setItem("style", style);
 
 // Si le navigateur est en mode sombre alors le site passe en mode sombre
 if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.querySelector("#icon-page").setAttribute("href", "polynomial_icon_darkmode.svg")
+    document.querySelector("#icon-page").setAttribute("href", "img/polynomial_icon_darkmode.svg")
     darkmode() ;
 }
 
@@ -28,7 +28,7 @@ function darkmode() {
     document.getElementById('darkmode-button').setAttribute("style", 
         "background-color: white;"+
         "color: black;"); //modifie l'apparence du bouton darkmode en "mode actif"
-    css.setProperty('--darkmode-icon', 'url(darkmode_black.svg)'); // change aussi la couleur de l'icone
+    css.setProperty('--darkmode-icon', 'url(../img/darkmode_black.svg)'); // change aussi la couleur de l'icone
     document.getElementById('originalmode-button').setAttribute("style", ""); //reset l'apparence dite "active" des autres boutons
     document.getElementById('businessmode-button').setAttribute("style", "");
 
@@ -46,7 +46,7 @@ function originalmode () {
     css.setProperty('--couleur4-2', '#d68844');
 
     document.getElementById('darkmode-button').setAttribute("style", "");
-    css.setProperty('--darkmode-icon', 'url(darkmode_white.svg)');
+    css.setProperty('--darkmode-icon', 'url(../img/darkmode_white.svg)');
     document.getElementById('originalmode-button').setAttribute("style",
         "background-color: white;"+
         "color: black;");
@@ -66,7 +66,7 @@ function businessmode () {
     css.setProperty('--couleur4-2', '#8193f7');
 
     document.getElementById('darkmode-button').setAttribute("style", "");
-    css.setProperty('--darkmode-icon', 'url(darkmode_white.svg)');
+    css.setProperty('--darkmode-icon', 'url(../img/darkmode_white.svg)');
     document.getElementById('originalmode-button').setAttribute("style","");
     document.getElementById('businessmode-button').setAttribute("style",
     "background-color: white;"+
