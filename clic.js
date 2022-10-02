@@ -10,7 +10,7 @@ function clic(){
     for (i = i; i < 1; i++) {
         
             document.getElementById("opened-bloc").innerHTML +=
-            "<img src='courbe_"+style+".png'id=image>";
+            "<img src='polynomial_img_"+style+".svg' id='image' width='100px' height='100px'>";
         
     }
 
@@ -128,5 +128,4 @@ function clic(){
     "Racine n°2 : <span class='result'>"+racineB+"</span><br>"+
     "<span class='result'>"+signeContraire+"</span><br>"
     
-
 } 
