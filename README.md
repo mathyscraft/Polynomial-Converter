@@ -45,6 +45,7 @@ Polynomial-converter is a website make for student who are fed up to convert you
 
 <h2 id="graph"> Graph exemple </h2>
 We can see in the screenshot                           below the interface in darkmode with an exemple function : f(x) = -2x²+10x-8
+
 <img src="readme_exemple.png">
 
 <br>
@@ -53,6 +54,7 @@ We can see in the screenshot                           below the interface in da
 There are three color themes available with each other his own differents colors (Original, Business & Darkmode) :
 
 <img src="readme_themes.png">
+
  It's possible to change it with the menu button (see below) located in the left top corner.
 
 <details>
@@ -80,7 +82,9 @@ L'objectif est de permettre une auto-correction au élève et à leur facilité 
 
 <h2 id="graphique"> Exemple de graphique </h2>
 Voici un screenshot du site en darkmode avec la fonction f(x) = -2x²+10-8 comme exemple.
+
 <img src="readme_exemple.png">
+
 Dans une première partie, les résultats sont affichés : les différentes formes, delta, les racines puis l'intervalle sur laquelle la fonction est du signe contraire de a.
 
 <br>
@@ -94,6 +98,7 @@ Dans une seconde partie, la courbe de la fonction est affichée ainsi que son ex
 Il existe trois thèmes disponibles avec chacuns leurs couleurs différentes (Original, Buisness & Darkmode) :
 
 <img src="readme_themes.png">
+
  Il est possible de le changer en utilisant le menu (voir ci-dessous) situé en haut à gauche de l'écran.
 <details>
   <summary>Afficher le menu</summary>
