@@ -10,7 +10,8 @@ function clic(){
     for (i = i; i < 1; i++) {
         
             document.getElementById("opened-bloc").innerHTML +=
-            "<img src='polynomial_img_"+style+".svg' id='image' width='100px' height='100px'>";
+            "<img src='img/polynomial_img_"+style+".svg' id='image' width='100px' height='100px'>";
+            
         
     }
 

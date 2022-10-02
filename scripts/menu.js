@@ -32,7 +32,7 @@ function darkmode() {
     document.getElementById('originalmode-button').setAttribute("style", ""); //reset l'apparence dite "active" des autres boutons
     document.getElementById('businessmode-button').setAttribute("style", "");
 
-    document.getElementById("image").setAttribute("src", "polynomial_img_1.svg") ;
+    document.getElementById("image").setAttribute("src", "img/polynomial_img_1.svg") ;
 }
 
 function originalmode () {
@@ -52,7 +52,7 @@ function originalmode () {
         "color: black;");
     document.getElementById('businessmode-button').setAttribute("style", "");
 
-    document.getElementById("image").setAttribute("src", "polynomial_img_0.svg") ;
+    document.getElementById("image").setAttribute("src", "img/polynomial_img_0.svg") ;
 }
 
 function businessmode () {
@@ -72,5 +72,5 @@ function businessmode () {
     "background-color: white;"+
     "color: black;");
 
-    document.getElementById("image").setAttribute("src", "polynomial_img_2.svg");
+    document.getElementById("image").setAttribute("src", "img/polynomial_img_2.svg");
 }
