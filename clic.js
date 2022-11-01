@@ -1,8 +1,8 @@
-var a;
-var b;
-var c;
+let a;
+let b;
+let c;
 
-var i = 0;
+let i = 0;
 
 function clic(){
 
@@ -14,17 +14,17 @@ function clic(){
         
     }
 
-    var form = document.getElementById("form");
+    const form = document.getElementById("form");
     a = form.elements[0].value ;
     b = form.elements[1].value ;
     c = form.elements[2].value ;
     console.log(a+" ; "+b+" ; "+c);
 
-    var delta = b**2-4*a*c ;
-    var alpha = (-b)/(2*a) ;
-    var beta = -delta/(4*a) ;
-    var xa = (-b-Math.sqrt(delta))/(2*a);
-    var xb = (-b+Math.sqrt(delta))/(2*a);
+    let delta = b**2-4*a*c ;
+    let alpha = (-b)/(2*a) ;
+    let beta = -delta/(4*a) ;
+    let xa = (-b-Math.sqrt(delta))/(2*a);
+    let xb = (-b+Math.sqrt(delta))/(2*a);
 
     localStorage.setItem("a", a);
     localStorage.setItem("b", b);
@@ -33,8 +33,8 @@ function clic(){
     localStorage.setItem("beta", beta);
     courbe()    
 
-    var signeB;
-    var signeC;
+    let signeB;
+    let signeC;
     if (b < 0) {
         b = -b
         signeB = '-'
@@ -48,8 +48,8 @@ function clic(){
         signeC = '+'
     }
 
-    var signeAlpha;
-    var signeBeta;
+    let signeAlpha;
+    let signeBeta;
     if (alpha < 0) {
         alpha = -alpha
         signeAlpha = '+'
@@ -83,8 +83,8 @@ function clic(){
     let racineA = xa;
     let racineB = xb;
 
-    var signeXa;
-    var signeXb;
+    let signeXa;
+    let signeXb;
     if (xa < 0) {
         xa = -xa
         signeXa = '+'
