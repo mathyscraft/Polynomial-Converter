@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style\index.css">
+    <link rel="stylesheet" href="style\menu.css">
     <title>Polynome converter</title>
-    <link rel="icon" type="image/png" href="polynomial_icon.svg">
+    <link id="icon-page" rel="icon" type="image/png" href="img/polynomial_icon.svg">
 </head>
 <body>
     <div class="menu">
         <button id="hamburger" onclick="menu()">
-            <img src="menu_hamburger.svg" width="48px" height="48px">
+            <img src="img/menu_hamburger.svg" width="48px" height="48px">
         </button>
         <nav id="nav" hidden>
             <h3>Style :</h3>
             <button class="nav-button" id="darkmode-button" onclick="darkmode()">
-                <img src="darkmode_white.svg" width="16px" height="16px">
+                <img src="img/darkmode_white.svg" width="16px" height="16px">
                 Mode Sombre
             </button>
             <button class="nav-button" id="businessmode-button" onclick="businessmode()">
@@ -57,14 +57,13 @@
             <p class="copyright" id="copyright">&copy; 2022 Mathys</p>
         </div>
     </div>
-    <div id="overlay" hidden></div>
+    <div id="overlay" onclick="menu()" hidden></div>
 </body>
 <footer>
-    <a href="https://www.flaticon.com/fr/icones-gratuites/graphique-lineaire" target="_blank" title="graphique linéaire icônes">Graphique linéaire icônes créées par Pixelmeetup - Flaticon</a>
-    <div> Icônes conçues par <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/fr/" title="Flaticon">www.flaticon.com'</a>
+    
 </footer>
 </html>
-<script src="clic.js"></script>
-<script src="zoom.js"></script>
-<script src="courbe.js"></script>
-<script src="menu.js"></script>
+<script src="scripts\clic.js"></script>
+<script src="scripts\zoom.js"></script>
+<script src="scripts\courbe.js"></script>
+<script src="scripts\menu.js"></script>
