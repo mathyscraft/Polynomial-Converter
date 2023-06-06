@@ -7,6 +7,11 @@
 }
 
 html, body {
+    position: relative;
+    display: grid;
+    margin: 0;
+    height: 100%;
+    
     background-color: var(--couleur2);
     color: var(--couleur3);
     font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
@@ -43,30 +48,28 @@ button {
     border: none;
     border-radius: 15px;
     box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.4);
-
+    transform: none;
+    transition: transform 100ms linear;
 }
 
 button:hover {
-    padding: 10px;
-    color: #f1f1f1;
-    font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', sans-serif;
-    font-size: 22px;
     background-color: var(--couleur4-2);
-    border: none;
-    border-radius: 15px;
     box-shadow: 5px 3px 12px 5px rgba(0,0,0,0.1);
 
+    transform: scale3d(1.05, 1.05, 1.05);
 }
 
 .page {
     display: flex;
     justify-content: center;
 }
+
 .bloc {
     text-align: center;
     background-color: var(--couleur1);
     line-height: 200%;
     width: 50%;
+    height: min-content;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style\index.css">
     <link rel="stylesheet" href="style\menu.css">
-    <title>Polynome converter</title>
+    <title>Polynomial converter</title>
     <link id="icon-page" rel="icon" type="image/png" href="img/polynomial_icon.svg">
 </head>
 <body>
@@ -45,16 +45,24 @@
                         <label>c =</label>
                         <input type="text" name="c" size="2" required>
                     </div>
-                
                 </form>
-                <br />
+                <br/>
                 <button onclick="clic()">Calculer</button>
             </div>
             <div id=opened-bloc>
-                <p id="reponse"></p>
+                <p id="reponse" hidden>
+                    Forme polynomiale: <span class='result' id="polynomial_field"></span><br>
+                    Forme canonique: <span class='result' id="canonical_field"></span><br>
+                    Forme factorisée: <span class='result' id="factorized_field"></span><br>
+                    Delta: <span class='result' id="delta_field"></span><br>
+                    Racine n°1 : <span class='result' id="root1_field"></span><br>
+                    Racine n°2 : <span class='result' id="root2_field"></span><br>
+                    Solutions de l'inéquation <span class="result" id="inequation_sign"></span> : <span class='result' id="inequation_solutions"></span><br>
+                </p>
             </div>
-            <div id="graph"></div>
-            <p class="copyright" id="copyright">&copy; 2022 Mathys</p>
+            <div id="graph">
+            </div>
+            <p class="copyright" id="copyright">&copy; 2023 Mathys</p>
         </div>
     </div>
     <div id="overlay" onclick="menu()" hidden></div>

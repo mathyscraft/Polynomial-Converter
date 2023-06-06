@@ -2,7 +2,7 @@
 <div style="text-align: center;">
     <img src="img/polynomial_icon.svg" width=128px>
     <h2> Polynomial converter </h2>
-    <small>&copy; 2022 Mathys</small>
+    <small>&copy; 2023 Mathys</small>
 </div>
 
 <br>
@@ -15,7 +15,7 @@
       <a href="#english">English</a>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#graph">Graph exemple</a></li>
+        <li><a href="#graph">Graph example</a></li>
         <li><a href="#colors">Color themes</a></li>
       </ul>
     </li>
@@ -23,7 +23,7 @@
       <a href="#francais">Français</a>
       <ul>
         <li><a href="#a-propos">A propos</a></li>
-        <li><a href="#graphique">Exemple de graphique </a></li>
+        <li><a href="#graphique">Exemple de graphique</a></li>
         <li><a href="#themes">Thèmes</a></li>
       </ul>
     </li>
@@ -38,24 +38,24 @@
 <h1 id="english">English</h1>
 
 
-<h2 id="about"> About</h2>
-Polynomial-converter is a website make for student who are fed up to convert yourself quadratics polynimomials to canonical or factorised form.
+<h2 id="about">About</h2>
+Polynomial-converter is a website made for lazy students who need a canonical or factorized expression of a trinomial function.
 
 <br>
 
-<h2 id="graph"> Graph exemple </h2>
-We can see in the screenshot                           below the interface in darkmode with an exemple function : f(x) = -2x²+10x-8
+<h2 id="graph">Graph example</h2>
+We can see in the screenshot below the dark themed interface with an some example function set: f(x) = -2x²+10x-8
 
 <img src="readme_exemple.png">
 
 <br>
 
 <h2 id="colors">Color themes</h2>
-There are three color themes available with each other his own differents colors (Original, Business & Darkmode) :
+There are three color themes available with each one its own different set of colors (Original, Business & Darkmode) :
 
 <img src="readme_themes.png">
 
- It's possible to change it with the menu button (see below) located in the left top corner.
+ You can change it in the menu accessible through a button located in the top left corner. (see below)
 
 <details>
   <summary>Display menu</summary>
