@@ -10,12 +10,12 @@ function courbe() {
 
     let zoom = localStorage.getItem("zoom");
 
-    // Si un graphique a dejà été créé alors il est supprimé
-    if (opened != 0 ) {
-        document.querySelector("#graph").innerHTML = "" ;
-    }
-
     let parentDiv = document.getElementById("graph");
+
+    // Si un graphique a déjà été créé alors il est supprimé
+    if (opened != 0 ) {
+        parentDiv.innerHTML = "";
+    }
 
     let url = document.createElement('a');
     parentDiv.appendChild(url) // Permettra par la suite de faire un lien clicable de l'image
